@@ -1,1 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Header */
+#navigation {
+    /* Displays as flex to align everything center vertically while having space between the content within this container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Sets the sizing for the header */
+    width: 100%;
+    height: 10vh;
+
+    background-color: var(--main-color);
+
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Logo */
+#navigation #logo {
+    /* Displays as flex and centers the content vertically and horizontallty */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+/* Search Bar */
+#navigation #searchBar {
+    /* Shown as a flex container, centers elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Input */
+#navigation #searchBar input {
+    /* Size of the input text field */
+    width: 800px;
+    height: 40px;
+    /* Font size for over text (placeholder and user entered text) */
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+}
+
+#navigation #searchBar input::placeholder {
+    color: grey;
+}
+
+/* X/Clear text button*/
+#navigation #searchBar #x {
+    /* Displays as flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* Font-size = size of the icon */
+    font-size: 30px;
+    margin-right: 10px;
+
+    color: rgb(206, 0, 0);
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Magnify Glass Logo */
+#navigation #searchBar #magnify-glass {
+    /* Shown as flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* Font-size = size of the icon */
+    font-size: 25px;
+
+    background-color: white;
+    color: black;
+    
+    border: none;
+    /* Must match the input border radius size to look consistent */
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
