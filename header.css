@@ -13,6 +13,12 @@
 
     margin: 0;
     padding: 0;
+
+    position: sticky;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    /* box-sizing: border-box; */
 }
 
 #navigation nav {
@@ -34,6 +40,11 @@
     color:white;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#navigation nav #logo a:hover {
+    color: var(--accent-color);;
 }
 
 /* Search Bar */
@@ -106,4 +117,3 @@
     background-color: white;
     color: black;
 }
-
