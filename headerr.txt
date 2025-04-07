@@ -1,0 +1,153 @@
+/* Header */
+#navigation {
+    /* Displays as flex to align everything center vertically while having space between the content within this container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Sets the sizing for the header */
+    width: 100%;
+    height: 9vh;
+
+    background-color: var(--main-color);
+
+}
+
+/* Logo */
+#navigation #logo {
+    /* Displays as flex and centers the content vertically and horizontallty */
+    display: flex;
+    align-items: center;
+
+    color: white;
+    cursor: pointer;
+
+    margin-left: 100px;
+}
+
+#navigation #logo img {
+    display: flex;
+    align-items: center;
+    width: 140px;
+}
+
+/* Search Bar */
+#navigation #searchBar {
+    /* Shown as a flex container, centers elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Input */
+#navigation #searchBar input {
+    /* Size of the input text field */
+    width: 800px;
+    height: 40px;
+    /* Font size for over text (placeholder and user entered text) */
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+}
+
+#navigation #searchBar input::placeholder {
+    color: grey;
+}
+
+/* X/Clear text button*/
+#navigation #searchBar #x {
+    /* Displays as flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* Font-size = size of the icon */
+    font-size: 30px;
+    margin-right: 10px;
+
+    color: rgb(206, 0, 0);
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Magnify Glass Logo */
+#navigation #searchBar #magnify-glass {
+    /* Shown as flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    /* Font-size = size of the icon */
+    font-size: 25px;
+
+    background-color: white;
+    color: black;
+    
+    border: none;
+    /* Must match the input border radius size to look consistent */
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+#navigation nav {
+    margin-right: 100px;
+}
+
+#navigation nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#navigation nav ul li {
+    color: white;
+    list-style-type: none;
+}
+
+#navigation nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#navigation nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#bottomHeader {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomHeader ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#bottomHeader ul li {
+    list-style-type: none;
+}
+
+#bottomHeader ul li a {
+    color: white;
+    font-size: 14px;
+}
