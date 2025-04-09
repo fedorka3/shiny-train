@@ -1,0 +1,103 @@
+/* Footer Section styles */
+footer {
+    background-color: var(--grey-color);
+    padding: 50px 20px 30px;   /* Top, side, bottom padding */
+    color: #1d1d1d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Footer container: centered grid layout */
+  .footer-container {
+    max-width: 1200px;       /* Maximum width */
+    margin: auto;
+    display: flex;        
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;               /* Space between grid items */
+    cursor: pointer;       
+  }
+  
+  /* Footer column headings */
+  .footer-column h4,
+  .footer-column h3 {
+    font-size: 18px;      
+    margin-bottom: 10px;     /* Space below headings */
+  }
+  
+  /* Heading links styling */
+  footer h3 a {
+    text-decoration: none;   
+    color: var(--primary-color);    
+  }
+  
+  /* Remove list bullets and padding */
+  .footer-column ul {
+    list-style: none;        /* No bullets */
+    padding: 0;              /* Remove padding */
+  }
+  
+  /* Spacing for list items */
+  .footer-column ul li {
+    margin-bottom: 8px;
+    display: flex;
+          /* Space between items */
+  }
+  
+  /* Footer list links styling */
+  .footer-column ul li a {
+    color: black;
+    text-decoration: none;   
+    font-size: 16px;        
+  }
+  
+  /* Underline links on hover */
+  .footer-column ul li a:hover {
+    text-decoration: underline; /* Underline when hovered */
+  }
+  
+  /* App buttons images */
+  footer .app-buttons img {
+    height: 40px;           
+    margin: 8px 5px 12px 0;    /* Margins around images */
+  }
+  
+  /* Payment icons images */
+  footer .payment-icons img {
+    height: 25px;        
+    margin-right: 10px;      /* Space to the right */
+  }
+  
+  /* Footer bottom: separated section */
+  .footer-bottom {
+    border-top: 1px solid #838383;  /* Top border line */
+    margin-top: 30px;            /* Space above */
+    padding-top: 20px;           /* Padding on top */
+    text-align: center;        
+  }
+  
+  /* Social icons styling */
+  footer .social-icons a {
+    color: #000000;          
+    margin: 0 10px;          
+    font-size: 20px;         /* Icon size */
+    transition: color 0.3s;  /* Smooth color transition on hover */
+  }
+  
+  /* Change social icon color on hover */
+  footer .social-icons a:hover {
+    color: rgb(82, 82, 82); /* Change to primary color */
+  }
+  
+  /* Footer bottom paragraph styling */
+  .footer-bottom p {
+    margin-top: 10px;        /* Space above text */
+    color: black;
+  }
+  
+  footer i {
+    margin-right: 10px;
+    color: black;
+  }
